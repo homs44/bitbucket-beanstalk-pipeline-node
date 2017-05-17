@@ -1,0 +1,12 @@
+{
+  "s3": {
+    "bucket": "<BUCKET_NAME>",
+    "key": "<FILE-KEY OR FILE-NAME>"
+  },
+  "beanstalk": {
+    "application_name":"<BEANSTALK-APPLICATION-NAME>",
+    "environment_name":"<BEANSTALK-ENVIRONMENT-NAME>",
+    "version_label": "<VERSION-LABEL>",
+    "description":"<VERSION-DESCRIPTION>"
+  }
+}

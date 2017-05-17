@@ -1,0 +1,11 @@
+image: node:4.4.7
+
+pipelines:
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          - apt-get update
+          - apt-get install -y zip
+          - npm install aws-sdk@2.51.0
+          - zip -r ./dist/app.zip ./application/*
+          - node ./beanstalk_deploy.js
