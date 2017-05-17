@@ -5,14 +5,14 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('test:server');
+var debug = require('debug')('application:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = 8081;
+var port = 8081
 app.set('port', port);
 
 /**
